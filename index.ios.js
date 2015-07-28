@@ -3,11 +3,6 @@ var entry = require('./app/entry');
 
 var {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  TouchableHighlight,
-  ScrollView,
   NavigatorIOS
 } = React;
 
