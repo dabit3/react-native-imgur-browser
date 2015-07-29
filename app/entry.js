@@ -9,7 +9,6 @@ var DrillDown = require('./drilldown');
 
 var React = require('react-native');
 var {
-  AppRegistry,
   StyleSheet,
   Text,
   View,
@@ -56,7 +55,7 @@ var ImgurViewer = React.createClass({
         <View>
           <TouchableHighlight onPress={self._getTopicFromId.bind(this, topic.name, topic.id)} underlayColor="#f1f1f1" style={[styles.drilldown, {width:Device.width}]}>
             <View>
-              <Text style={{fontSize:20, color: '#61dafb'}}>{topic.name}</Text>
+              <Text style={{fontSize:20, color: '#0098e6'}}>{topic.name}</Text>
               <Text>{topic.description}</Text>
             </View>
           </TouchableHighlight>

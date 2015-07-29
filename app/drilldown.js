@@ -43,11 +43,11 @@ var DrillDown = React.createClass({
 
 		var content = this.state.images.map(function(image) {
 			return (
-				<View key={image.id} >
-					<View >
+				<View key={image.id} style={{borderBottomColor: '#0098e6', borderBottomWidth:3}}>
+          <Text style={{padding:20,fontSize:16, color: '#0098e6'}}>{image.title}</Text>
+					<View>
 						<Image source={{uri: self.getImageUrl(image.id)}} style={{width:Device.width, height:300}} />	
 					</View>
-					<Text>{image.title}</Text>
 				</View>
 			)
 		});
